@@ -1,8 +1,6 @@
 package union_find;
 import java.util.Scanner;
 import java.util.Arrays;
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
 
 // Every node in a component (thus connected) is on the same group
 

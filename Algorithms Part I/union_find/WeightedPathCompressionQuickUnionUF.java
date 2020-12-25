@@ -1,4 +1,5 @@
 package union_find;
+import java.util.Scanner;
 
 public class WeightedPathCompressionQuickUnionUF {
     private int[] parent;
@@ -43,6 +44,18 @@ public class WeightedPathCompressionQuickUnionUF {
     }
 
     public static void main(String[] args) {
-        
+        Scanner input = new Scanner(System.in);
+        int numNode = input.nextInt();
+        QuickFindUF uf = new QuickFindUF(numNode);
+        while(input.hasNextInt()) {
+            int node1 = input.nextInt();
+            int node2 = input.nextInt();
+            if (uf.connected(node1, node2)) continue;
+            uf.union(node1, node2);
+        }
+        input.close();
+        System.out.println(uf.connected(3, 9)); // True
+        System.out.println(uf.connected(7, 0)); // True
+        System.out.println(uf.connected(7, 4)); // False
     }
 }
