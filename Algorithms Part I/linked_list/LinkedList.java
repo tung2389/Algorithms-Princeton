@@ -1,7 +1,7 @@
 package linked_list;
 public class LinkedList {
 
-    Node head; // Head of the linked list
+    private Node head = null; // Head of the linked list
 
     private class Node {
         int data;
@@ -72,7 +72,7 @@ public class LinkedList {
         list.insert(6, 5);
         list.insert(0, 0);
         list.printList();
-        
+
         list.insert(7, 8);
 
     }
