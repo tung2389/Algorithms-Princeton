@@ -1,2 +1,3 @@
 - Implement more methods for LinkedList, such as delete by position and by key.
 - Learn and implement ResizingArrayStack: 6:58.
+- Add Stack with Iterator
