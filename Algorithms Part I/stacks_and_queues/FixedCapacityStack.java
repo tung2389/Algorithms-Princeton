@@ -1,12 +1,12 @@
 package stacks_and_queues;
 import java.util.Scanner;
 
-public class FixedCapacityStack {
-    private String[] stack;
+public class FixedCapacityStack<Item> {
+    private Item[] stack;
     private int numItem = 0;
 
     public FixedCapacityStack(int capactiy) {
-        stack = new String[capactiy];
+        stack = (Item[]) new Object[capactiy];
     }
 
     public boolean isEmpty() {
@@ -17,20 +17,20 @@ public class FixedCapacityStack {
         return numItem;
     }
 
-    public void push(String item) {
+    public void push(Item item) {
         stack[numItem] = item;
         numItem++;
     }
 
-    public String pop() {
+    public Item pop() {
         numItem--;
-        String item = stack[numItem];
+        Item item = stack[numItem];
         stack[numItem] = null; // Free the memory - avoid loitering
         return item;
     }
 
     public void printAllItems() {
-        for (String item : stack) {
+        for (Item item : stack) {
             if (item != null) {
                 System.out.println(item);
             }
@@ -40,7 +40,7 @@ public class FixedCapacityStack {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int capactiy = input.nextInt();
-        FixedCapacityStack stack = new FixedCapacityStack(capactiy);
+        FixedCapacityStack<String> stack = new FixedCapacityStack<String>(capactiy);
 
         input.nextLine();
         while(true) {
