@@ -2,3 +2,4 @@
 - Learn and implement ResizingArrayStack: 6:58.
 - Add Stack with Iterator
 - Learn Elementary sorting.
+- Implement BinarySearchST (or binary search symbol table)
