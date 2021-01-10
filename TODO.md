@@ -1,5 +1,6 @@
 - Implement more methods for LinkedList, such as delete by position and by key.
 - Learn and implement ResizingArrayStack: 6:58.
-- Add Stack with Iterator
+- Add Stack and Queue with Iterator => Stack.java (default) and Queue.java(default)
 - Learn Elementary sorting.
 - Implement BinarySearchST (or binary search symbol table)
+- Implement Ordered operation on both BST and Binary search symbol table.
