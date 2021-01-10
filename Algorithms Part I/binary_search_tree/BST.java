@@ -1,6 +1,4 @@
 package binary_search_tree;
-import java.lang.Thread.State;
-import java.util.EnumSet;
 
 import stacks_and_queues.Queue;
 
@@ -139,8 +137,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     private Node delete(Node startNode, Key key) {
         if (startNode == null) return null;
         int comparison = key.compareTo(startNode.key);
-        if (comparison < 0) startNode.left = delete(startNode.left, key)
-        else if (comparison > 0) startNode.right = delete(startNode.right, key)
+        if (comparison < 0) startNode.left = delete(startNode.left, key);
+        else if (comparison > 0) startNode.right = delete(startNode.right, key);
         else {
             if (startNode.right == null) return startNode.left;
             if (startNode.left == null) return startNode.right;
